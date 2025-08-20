@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>HTML Table Exercise</title>
+</head>
+
+<body>
+    <h2 id="tableHeading1">Semester II Schedule</h2>
+    <div class="table-wrapper">
+        <table aria-labelledby="tableHeading1" aria-label="Semester II Schedule">
+            <caption>Fig : semester 2 course Schedule</caption>
+            <thead>
+                <tr>
+                    <th id="course">Course</th>
+                    <th id="time" scope="colgroup" colspan="2">Time</th>
+                    <th id="room" scope="col">Room</th>
+                    <th id="day" scope="col">Day</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th id="english" scope="rowgroup" rowspan="2" headers="course" class="subject">
+                        English II
+                    </th>
+                    <td headers="time english">
+                        9:00
+                    </td>
+                    <td headers="time english">
+                        11:00
+                    </td>
+                    <td headers="room english">L2201</td>
+                    <td headers="day english">Monday</td>
+                </tr>
+                <tr>
+                    <td headers="time english">
+                        9:00
+                    </td>
+                    <td headers="time english">
+                        11:00
+                    </td>
+                    <td headers="room english">L2201</td>
+                    <td headers="day english">Wednesday</td>
+                </tr>
+                <tr>
+                    <th id="geography" scope="row" headers="course" class="subject">
+                        Geography
+                    </th>
+                    <td headers="time geography">
+                        11:00
+                    </td>
+                    <td headers="time geography">
+                        12:45
+                    </td>
+                    <td headers="room geography">
+                        G107
+                    </td>
+                    <td headers="day geography">
+                        Tuesday
+                    </td>
+                </tr>
+                <tr>
+                    <th id="biology" scope="row" headers="course" class="subject">
+                        Biology
+                    </th>
+                    <td headers="time biology">
+                        9:00
+                    </td>
+                    <td headers="time biology">
+                        12:45
+                    </td>
+                    <td headers="room biology">
+                        B302
+                    </td>
+                    <td headers="day biology">
+                        Friday
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <h2 id="tableHeading2">Product Comparison Chart</h2>
+    <div class="table-wrapper2">
+        <table aria-labelledby="tableHeading2" aria-label="Product Comparison Chart">
+            <caption>Fig : Comparison of the features between the products.</caption>
+            <thead>
+                <tr>
+                    <th id="empty"></th>
+                    <th id="ProductA" scope="col">ProductA</th>
+                    <th id="ProductB" scope="col">ProductB</th>
+                    <th id="ProductC" scope="col">ProductC</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th id="durability" scope="row" headers="empty" class="subject2">
+                        Durability
+                    </th>
+                    <td headers="ProductA durability">
+                        10/10
+                    </td>
+                    <td headers="ProductB durability">
+                        5/10
+                    </td>
+                    <td headers="ProductC durability">
+                        7/10
+                    </td>
+                </tr>
+                <tr>
+                    <th headers="Design" scope="row" headers="empty" class="subject2">
+                        Design
+                    </th>
+                    <td headers="ProductA design">
+                        3/10
+                    </td>
+                    <td headers="ProductB design">
+                        8/10
+                    </td>
+                    <td headers="ProductC design">
+                        7/10
+                    </td>
+                </tr>
+                <tr>
+                    <th id="usability" scope="row" headers="empty" class="subject2">
+                        Usability
+                    </th>
+                    <td headers="ProductA usability">
+                        7/10
+                    </td>
+                    <td headers="ProductB usability">
+                        10/10
+                    </td>
+                    <td headers="ProductC usability">
+                        5/10
+                    </td>
+                </tr>
+                <tr>
+                    <th id="price" scope="row" headers="empty" class="subject2">
+                        Price
+                    </th>
+                    <td headers="ProductA price">
+                        9/10
+                    </td>
+                    <td headers="ProductB price">
+                        7/10
+                    </td>
+                    <td headers="ProductC price">
+                        3/10
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
