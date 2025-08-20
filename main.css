@@ -18,7 +18,7 @@ body {
     /* box-shadow: 0px 35px 50px rgba(0, 0, 0, 0.2); */
 }
 
-h2 {
+#tableHeading1 {
     text-align: center;
     font-size: 18px;
     letter-spacing: 1px;
@@ -52,16 +52,20 @@ h2 {
     text-align: center;
     padding: 8px;
     border-left: 2px solid #cfcbcb;
-    color: rgb(87, 87, 87);
-    height:60px;
+    height: 60px;
 }
 
-.table-wrapper table tbody th, .table-wrapper table tbody td {
+.table-wrapper table tbody th,
+.table-wrapper table tbody td {
     border-bottom: 2px solid #cfcbcb;
 }
 
 .subject {
     color: #0068ef;
+}
+
+.table-wrapper table tbody td {
+    color: rgb(87, 87, 87);
 }
 
 /* Color Table Headers */
@@ -72,9 +76,11 @@ h2 {
     border-top: 2px solid #cfcbcb;
 }
 
-.table-wrapper table thead th:last-child, .table-wrapper table tbody td:last-child {
-        border-right: 2px solid #cfcbcb;
+.table-wrapper table thead th:last-child,
+.table-wrapper table tbody td:last-child {
+    border-right: 2px solid #cfcbcb;
 }
+
 /*
 table thead th:nth-child(odd) {
     color: white;
@@ -107,8 +113,16 @@ table thead th:nth-child(odd) {
     border-bottom-right-radius: 10px;
 }
 
+#tableHeading2 {
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: rgb(42, 41, 41);
+    margin: 20px 0px;
+}
+
 .table-wrapper2 {
-    margin: 5px 70px 70px;
+    margin: 10px 70px 70px;
 }
 
 .table-wrapper2 table {
@@ -124,16 +138,16 @@ table thead th:nth-child(odd) {
 }
 
 .table-wrapper2 table tr:nth-child(even) {
-    background-color: #94b6f1;
+    background-color: #b9cae9;
 }
 
 .table-wrapper2 table tbody tr:nth-child(odd) {
-    background-color: #cac3f3;
+    background-color: #e0dcf7;
 }
 
 .table-wrapper2 caption {
     caption-side: bottom;
-    margin: 5px 0px;
+    margin: 10px 0px;
     font-size: 14px;
     font-style: italic;
 }
@@ -143,26 +157,34 @@ table thead th:nth-child(odd) {
     text-align: center;
     padding: 8px;
     color: rgb(42, 41, 41);
-    height:60px;
-    border-left: 2px solid #0935b9;
+    height: 60px;
+    border-left: 2px solid #4565c4;
 }
 
 .subject2 {
     color: rgb(42, 41, 41);
 }
+
 .table-wrapper2 table thead th {
     color: rgb(42, 41, 41);
-    background-color: #94b6f1;
+    background-color: #a5c0f0;
     height: 60px;
-    border-top: 2px solid #0935b9;
+    border-top: 2px solid #4565c4;
 }
 
-.table-wrapper2 table thead th:last-child, .table-wrapper2 table tbody td:last-child {
-        border-right: 2px solid #0935b9;
+.table-wrapper2 table tbody th {
+    text-align: left;
 }
 
-.table-wrapper2 table thead th, .table-wrapper2 table tbody th, .table-wrapper2 table tbody td {
-    border-bottom: 2px solid #0935b9;
+.table-wrapper2 table thead th:last-child,
+.table-wrapper2 table tbody td:last-child {
+    border-right: 2px solid #4565c4;
+}
+
+.table-wrapper2 table thead th,
+.table-wrapper2 table tbody th,
+.table-wrapper2 table tbody td {
+    border-bottom: 2px solid #4565c4;
 }
 
 /* .table-wrapper2 table thead th:first-child { */
@@ -170,4 +192,66 @@ table thead th:nth-child(odd) {
     border-top: none;
     border-left: none;
     background-color: transparent;
+}
+
+.table-wrapper3 {
+    margin: 10px 70px 70px;
+}
+
+.table-wrapper3 table {
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    font-size: 16px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 2px solid #04113b;
+
+}
+
+.table-wrapper3 table thead th {
+    color: rgb(42, 41, 41);
+    background-color: #a5c0f0;
+    height: 60px;
+    border-bottom: none;
+    border-right: none;
+
+}
+
+.table-wrapper3 table td,
+.table-wrapper3 table th {
+    text-align: center;
+    padding: 8px;
+    color: rgb(42, 41, 41);
+    height: 60px;
+    border-right: 2px solid #819df8;
+}
+
+.table-wrapper3 table tbody th,
+.table-wrapper3 table tbody td {
+    border-bottom: 2px solid #819df8;
+}
+
+.table-wrapper3 table thead th:last-child,
+.table-wrapper3 table tbody td:last-child {
+    border-right: none;
+    ;
+}
+
+.table-wrapper3 table tbody tr:last-child th,
+.table-wrapper3 table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+#bunryuImg,
+#odikaImg,
+#ichiranImg,
+#kagomeImg,
+#santokaImg {
+    transform: rotate(-90deg);
+}
+
+.soupType {
+    color: #4565c4;
+    font-size: 24px;
 }
